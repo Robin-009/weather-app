@@ -1,0 +1,81 @@
+/* Overall background styling for the component */
+.weather-container {
+  max-width: 600px; /* Increase max-width for larger screens */
+  margin: 20px auto;
+  padding: 30px; /* Increase padding for more spacing */
+  background: linear-gradient(to bottom right, #a2c2e6, #fef9f9); /* Soft gradient background */
+  border-radius: 10px; /* Increase border-radius for a more rounded look */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Enhance shadow effect */
+  text-align: center;
+  position: relative; /* Position relative for absolute positioning of decorative elements */
+  overflow: hidden; /* Hide overflow to keep 2D elements within the container */
+}
+
+/* Style for the page heading */
+.page-heading {
+  font-size: 5rem; /* Increase font size for emphasis */
+  font-family: 'Roboto', sans-serif; /* Trendy font */
+  background: linear-gradient(45deg, #d4af37, #c0c0c0); /* Gradient metallic color */
+  -webkit-background-clip: text; /* Clip gradient to text */
+  -webkit-text-fill-color: transparent; /* Make text fill transparent for gradient effect */
+  margin-bottom: 30px; /* Increase space below the heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Styling for button */
+button {
+  padding: 15px 30px; /* Increase padding for a larger button */
+  border: none;
+  border-radius: 10px; /* Match border-radius with container */
+  background: linear-gradient(45deg, #61dafb, #4fa3d5); /* Gradient background */
+  color: #ffffff; /* White text */
+  font-size: 1.2rem; /* Slightly larger font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer;
+  margin-top: 15px; /* Increase margin for better spacing */
+  transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+  outline: none; /* Remove default outline */
+}
+
+/* Button hover state */
+button:hover {
+  background: linear-gradient(45deg, #4fa3d5, #61dafb); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Slightly lift the button */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Button active state */
+button:active {
+  background: linear-gradient(45deg, #61dafb, #4fa3d5); /* Maintain gradient but darker shade on click */
+  transform: translateY(0); /* Remove lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+/* Button focus state */
+button:focus {
+  box-shadow: 0 0 0 3px rgba(61, 175, 255, 0.5); /* Add focus ring effect */
+}
+
+/* Input field styling */
+input[type="text"] {
+  padding: 12px; /* Increase padding for larger input field */
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 10px; /* Match border-radius with button */
+  font-size: 1.1rem; /* Slightly larger font size */
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Input focus state */
+input[type="text"]:focus {
+  border-color: #61dafb; /* Highlight border on focus */
+  outline: none;
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff6f6f; /* Error color */
+  margin-top: 15px; /* Increase space above error message */
+}
